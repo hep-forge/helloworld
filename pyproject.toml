@@ -1,0 +1,38 @@
+[project]
+name = "helloworld"
+version = "0.2.0"
+description = "Hello, World!"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "John Doe", email = "john.doe@example.com" }
+]
+
+keywords = ["fibonacci", "math", "example", "hello", "world"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "numpy>=1.19.0"
+]
+
+[project.urls]
+homepage = "https://github.com/hep-forge/helloworld/"
+repository = "https://github.com/hep-forge/helloworld/"
+
+[project.optional-dependencies]
+test = ["unittest"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "helloworld" = "modules" }
+packages = [
+    "helloworld", 
+    "helloworld.math"
+]

@@ -1,0 +1,10 @@
+name: helloworld
+
+channels:
+  - hep-forge
+  - conda-forge
+  - default
+
+dependencies:
+ - python3
+ - numpy
